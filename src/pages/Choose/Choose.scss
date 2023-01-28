@@ -1,0 +1,66 @@
+.loginWrap {
+  background: var(--bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font);
+  overflow: hidden;
+
+  svg {
+    fill: var(--primary);
+    width: 20px;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    color: var(--text-color);
+    align-self: flex-start;
+    margin-left: 4rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    color: var(--bg);
+    background: var(--primary);
+    font-family: var(--font);
+    height: 60px;
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+    width: 80%;
+
+    &:active {
+      filter: brightness(1.2);
+    }
+  }
+
+  .chooseGrid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 180px;
+    place-items: center;
+
+    .chooseOption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-color-accent);
+      font-family: var(--font);
+      font-size: 1.5rem;
+      font-weight: 800;
+      border-radius: var(--border-radius);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 180px;
+      aspect-ratio: 1/1;
+    }
+  }
+}

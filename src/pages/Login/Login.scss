@@ -7,6 +7,7 @@
   align-items: center;
   height: 100vh;
   font-family: var(--font);
+  overflow: hidden;
 
   svg {
     fill: var(--primary);
@@ -57,8 +58,6 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-
-
 
     input {
       color: var(--text-color);

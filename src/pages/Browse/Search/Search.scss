@@ -1,0 +1,126 @@
+.searchWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+
+    overflow: hidden;
+
+    h1 {
+        font-family: var(--font);
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 0;
+        align-self: flex-start;
+        margin-left: 2rem;
+        margin-bottom: 1.4rem;
+    }
+    h2 {
+        font-family: var(--font);
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--text-color);
+        margin: 0;
+    }
+    h3 {
+        font-family: var(--font);
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--text-color);
+        margin: 0;
+    }
+    p {
+        font-family: var(--font);
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--text-color);
+    }
+
+    select {
+        color: var(--text-color);
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: 1.2rem;
+        height: 40px;
+        min-width: 40%;
+        -webkit-appearance: none;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid var(--primary);
+    }
+
+    button {
+        font-family: var(--font);
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--text-color-accent);
+        background-color: var(--primary);
+        border: none;
+        border-radius: var(--border-radius);
+        height: 50px;
+        width: 85%;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        &:active {
+            filter: brightness(1.2);
+        }
+    }
+
+    .searchSelectCategory {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        width: 85%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .searchTitle {
+        align-self: flex-start;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+      h2 {
+          margin-bottom: 1rem;
+      }
+    }
+
+    .searchLike {
+        align-self: flex-start;
+        margin-left: 2rem;
+    }
+
+    .searchResults {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .searchResult {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.4rem;
+
+            border-bottom: 2px solid var(--primary);
+
+            img {
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+                margin-right: 30px;
+                margin-bottom: 20px;
+                border-radius: var(--border-radius);
+            }
+        }
+    }
+}

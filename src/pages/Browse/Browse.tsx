@@ -10,7 +10,13 @@ import {
     IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { square, triangle, images } from 'ionicons/icons';
+import {
+    homeOutline,
+    chatbubbleOutline,
+    searchOutline,
+    personOutline,
+    notificationsOutline
+} from 'ionicons/icons';
 
 import Home from './Home/Home';
 import Inbox from './Inbox/Inbox';
@@ -38,25 +44,25 @@ const Browse: React.FC = () => {
                   </IonRouterOutlet>
 
                   <IonTabBar slot="bottom">
-                      <IonTabButton tab="tab1" href="/tab1">
-                          <IonIcon icon={triangle} />
-                          <IonLabel> Home </IonLabel>
+                      <IonTabButton tab="tab1" href="/browse/home">
+                          <IonIcon icon={homeOutline} />
+                          { /* <IonLabel> Home </IonLabel>} */ }
                       </IonTabButton>
-                      <IonTabButton tab="tab2" href="/tab2">
-                          <IonIcon icon={images} />
-                          <IonLabel> Inbox </IonLabel>
+                      <IonTabButton tab="tab2" href="/browse/inbox">
+                          <IonIcon icon={chatbubbleOutline} />
+                          { /* <IonLabel> Home </IonLabel>} */ }
                       </IonTabButton>
-                      <IonTabButton tab="tab3" href="/tab3">
-                          <IonIcon icon={square} />
-                          <IonLabel> Search </IonLabel>
+                      <IonTabButton tab="tab3" href="/browse/search">
+                          <IonIcon icon={searchOutline} />
+                          { /* <IonLabel> Home </IonLabel>} */ }
                       </IonTabButton>
-                      <IonTabButton tab="tab4" href="/tab4">
-                          <IonIcon icon={triangle} />
-                          <IonLabel> Notifications </IonLabel>
+                      <IonTabButton tab="tab4" href="/browse/notifications">
+                          <IonIcon icon={notificationsOutline} />
+                          { /* <IonLabel> Home </IonLabel>} */ }
                       </IonTabButton>
-                      <IonTabButton tab="tab5" href="/tab5">
-                          <IonIcon icon={images} />
-                          <IonLabel> Profile </IonLabel>
+                      <IonTabButton tab="tab5" href="/browse/profile">
+                          <IonIcon icon={personOutline} />
+                          { /* <IonLabel> Home </IonLabel>} */ }
                       </IonTabButton>
                   </IonTabBar>
 

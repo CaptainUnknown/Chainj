@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
-
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -74,6 +74,14 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+    /* Custom */
+  --primary: #1E5781;
+  --text-color: black;
+  --text-color-accent: white;
+  --font: 'Montserrat', sans-serif;
+  --border-radius: 5px;
+  --bg: #f4f5f8;
 }
 
 @media (prefers-color-scheme: dark) {

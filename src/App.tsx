@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import Choose from './pages/Choose/Choose';
+import Splash from './pages/Splash/Splash';
 import Browse from './pages/Browse/Browse';
 
 /* Core CSS required for Ionic components to work properly */
@@ -46,6 +47,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/choose">
           <Choose />
+        </Route>
+        <Route exact path="/splash">
+          <Splash />
         </Route>
         <Route exact path="/browse">
           <Browse />

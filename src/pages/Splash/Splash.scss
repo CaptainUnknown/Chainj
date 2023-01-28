@@ -1,0 +1,66 @@
+.splashWrap {
+  background: var(--bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font);
+  overflow: hidden;
+
+  svg {
+    fill: var(--text-color-accent);
+    width: 40px;
+    aspect-ratio: 1/1;
+  }
+
+  .splashVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .splashBlocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8rem;
+
+    .splashBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-color-accent);
+      font-family: var(--font);
+      font-size: 1.5rem;
+      font-weight: 800;
+      border-radius: var(--border-radius);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 200px;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  .splashSignSkip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    width: 100%;
+
+    a {
+      color: var(--primary);
+    }
+  }
+}

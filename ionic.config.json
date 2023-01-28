@@ -1,0 +1,7 @@
+{
+  "name": "ChainJ",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

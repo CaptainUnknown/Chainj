@@ -1,0 +1,16 @@
+.notificationsWrap {
+  background: var(--bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font);
+  overflow: hidden;
+
+  svg {
+    width: 70px;
+    aspect-ratio: 1/1;
+  }
+}

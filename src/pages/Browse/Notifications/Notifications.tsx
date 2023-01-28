@@ -1,20 +1,17 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './Notifications.css';
+import './Notifications.scss';
+
+import { ReactComponent as NotFound } from "../../../assets/notfound.svg";
 
 const Notifications: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+          <div className='notificationsWrap'>
+              <NotFound/>
+              <h1> No Request Found </h1>
+              <a> Post a request </a>
+          </div>
       </IonContent>
     </IonPage>
   );

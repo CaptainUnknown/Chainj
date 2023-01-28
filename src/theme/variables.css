@@ -82,6 +82,7 @@ http://ionicframework.com/docs/theming/ */
   --font: 'Montserrat', sans-serif;
   --border-radius: 5px;
   --bg: #f4f5f8;
+  --bg-accent: #868686;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,123 @@
+.inviteWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--text-color);
+  padding: 0;
+
+  svg {
+    fill: var(--text-color-accent);
+    width: 100px;
+    aspect-ratio: 1/1;
+  }
+
+  .profileHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    background: var(--primary);
+
+    h2 {
+      font-family: var(--font);
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--text-color-accent);
+      margin: 0;
+      margin-left: 0.4rem;
+      margin-top: 0.5rem;
+    }
+    .profileBalance {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .inviteDivider {
+    height: 5px;
+    border-radius: var(--border-radius);
+    width: 100px;
+    background-color: var(--primary);
+    margin-top: 4rem;
+  }
+
+  .inviteContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    h2 {
+      font-size: 1.2rem;
+      font-family: var(--font);
+      width: 80%;
+    }
+
+    svg {
+      width: 40px;
+      aspect-ratio: 1/1;
+      fill: var(--primary);
+      margin-left: auto;
+      transition: 200ms all ease-in-out;
+
+      &:active {
+        filter: brightness(1.2);
+      }
+    }
+  }
+
+  .inviteBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+
+    svg {
+      fill: var(--text-color-accent);
+      width: 50px;
+      aspect-ratio: 1/1;
+      transition: 200ms all ease-in-out;
+
+      &:active {
+        filter: brightness(0.7);
+      }
+    }
+
+    h2 {
+      color: var(--text-color-accent);
+      font-family: var(--font);
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      height: 100px;
+      aspect-ratio: 1/1;
+      margin-bottom: 20px;
+    }
+
+    .inviteBottomFacebook {
+      background-color: #3B5998;
+    }
+    .inviteBottomTwitter {
+      background-color: #1da1f2;
+    }
+    .inviteBottomContacts {
+      background-color: #3b9851;
+    }
+  }
+}

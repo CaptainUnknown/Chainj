@@ -37,6 +37,10 @@
     font-family: var(--font);
     height: 60px;
     border-radius: var(--border-radius);
+
+    &:active {
+      filter: brightness(1.2);
+    }
   }
 
   .loginButtons {

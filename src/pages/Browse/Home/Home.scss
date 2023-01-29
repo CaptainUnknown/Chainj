@@ -11,6 +11,10 @@
   margin: 0;
   overflow: hidden;
 
+  h1, h2, h3, p {
+    font-family: var(--font);
+  }
+
   .homeHeader {
     display: flex;
     flex-direction: row;

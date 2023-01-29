@@ -38,6 +38,10 @@
     height: 60px;
     border-radius: var(--border-radius);
 
+    h1, h2, h3, p {
+      font-family: var(--font);
+    }
+
     &:active {
       filter: brightness(1.2);
     }
@@ -51,7 +55,7 @@
     width: 90%;
 
     button {
-      min-width: 40%;
+      width: 40%;
       height: 45px;
     }
   }

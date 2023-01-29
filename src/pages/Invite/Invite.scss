@@ -8,6 +8,10 @@
   color: var(--text-color);
   padding: 0;
 
+  h1, h2, h3, p {
+    font-family: var(--font);
+  }
+
   svg {
     fill: var(--text-color-accent);
     width: 100px;

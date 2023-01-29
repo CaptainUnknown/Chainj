@@ -8,6 +8,10 @@
   color: var(--text-color);
   padding: 0;
 
+  h1, h2, h3, p {
+    font-family: var(--font);
+  }
+
   svg {
     fill: var(--text-color-accent);
     width: 100px;
@@ -83,7 +87,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #ccc;
+      background-color: #6e6e6e;
       -webkit-transition: .4s;
       transition: .4s;
     }
@@ -95,17 +99,17 @@
       width: 26px;
       left: 4px;
       bottom: 4px;
-      background-color: white;
+      background-color: var(--bg);
       -webkit-transition: .4s;
       transition: .4s;
     }
 
     input:checked + .slider {
-      background-color: #2196F3;
+      background-color: var(--primary);
     }
 
     input:focus + .slider {
-      box-shadow: 0 0 1px #2196F3;
+      box-shadow: 0 0 1px var(--primary);
     }
 
     input:checked + .slider:before {

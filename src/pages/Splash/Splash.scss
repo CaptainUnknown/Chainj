@@ -8,6 +8,10 @@
   font-family: var(--font);
   overflow: hidden;
 
+  h1, h2, h3, p {
+    font-family: var(--font);
+  }
+
   svg {
     fill: var(--text-color-accent);
     width: 40px;

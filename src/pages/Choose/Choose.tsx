@@ -10,7 +10,7 @@ const Choose: React.FC = () => {
 
         { /* Body */ }
       <IonContent fullscreen>
-          <div className='loginWrap'>
+          <div className='chooseWrap'>
               <GoBack />
               <a> Go Back </a>
               <h1> Choose Service that suits you best. </h1>

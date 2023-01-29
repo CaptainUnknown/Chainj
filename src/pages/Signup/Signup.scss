@@ -38,6 +38,10 @@
     border-radius: var(--border-radius);
     cursor: pointer;
 
+    h1, h2, h3, p {
+      font-family: var(--font);
+    }
+
     svg {
       fill: white;
       width: 20px;

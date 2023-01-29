@@ -8,6 +8,10 @@
   padding: 1rem;
   font-family: var(--font);
 
+  h1, h2, h3, p {
+    font-family: var(--font);
+  }
+
   h1 {
     color: var(--text-color);
     align-self: flex-start;

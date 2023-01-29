@@ -80,7 +80,7 @@ http://ionicframework.com/docs/theming/ */
     /* Custom */
   --primary: #1E5781;
   --text-color: black;
-  --text-color-accent: white;
+  --text-color-accent: #d2d2d2;
   /*--font: 'Montserrat', sans-serif;*/
   --font: 'Inter', sans-serif;
   --border-radius: 5px;

@@ -6,7 +6,7 @@ import { ReactComponent as Close } from "../../assets/close.svg";
 import { ReactComponent as UserAvatar } from "../../assets/user.svg";
 import { ReactComponent as Star } from "../../assets/star.svg";
 
-const Notifications: React.FC = () => {
+const ProfileAbout: React.FC = () => {
     const items: TabsProps['items'] = [
         {
             key: '1',
@@ -203,4 +203,4 @@ const Notifications: React.FC = () => {
   );
 };
 
-export default Notifications;
+export default ProfileAbout;

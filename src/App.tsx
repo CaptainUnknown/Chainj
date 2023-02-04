@@ -11,6 +11,7 @@ import Splash from './pages/Splash/Splash';
 import Interest from './pages/Interest/Interest';
 import Invite from './pages/Invite/Invite';
 import Promote from './pages/Promote/Promote';
+import ProfileAbout from './pages/ProfileAbout/ProfileAbout';
 import Browse from './pages/Browse/Browse';
 
 /* Core CSS required for Ionic components to work properly */
@@ -62,6 +63,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/promote">
           <Promote />
+        </Route>
+        <Route exact path="/profileabout">
+          <ProfileAbout />
         </Route>
         <Route exact path="/browse">
           <Browse />

@@ -79,6 +79,7 @@ http://ionicframework.com/docs/theming/ */
 
     /* Custom */
   --primary: #1E5781;
+  --primary-contrast: #FFD700;
   --text-color: black;
   --text-color-accent: #d2d2d2;
   /*--font: 'Montserrat', sans-serif;*/

@@ -1,0 +1,212 @@
+.aboutWrap {
+  background: var(--bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  font-family: var(--font);
+  overflow: hidden;
+
+  h1 {
+    align-self: flex-start;
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  button {
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color-accent);
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--border-radius);
+    height: 50px;
+    width: 85%;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    &:active {
+      filter: brightness(1.2);
+    }
+  }
+
+  svg {
+    width: 70px;
+    aspect-ratio: 1/1;
+    margin-right: 20px;
+  }
+
+  select {
+    color: var(--text-color);
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 1.2rem;
+    height: 60px;
+    width: 90%;
+    -webkit-appearance: none;
+    background: transparent;
+    padding-left: 1rem;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    border-radius: var(--border-radius);
+
+    &:focus {
+      border: 2px solid var(--primary);
+      outline: none;
+    }
+  }
+
+  .aboutHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    //border-bottom: 2px solid var(--primary);
+    background-color: var(--ion-card-background);
+    padding: 10px;
+
+    svg {
+      fill: var(--text-color-accent);
+      width: 14px;
+      aspect-ratio: 1/1;
+      transition: 200ms all ease-in-out;
+
+      &:active {
+        fill: var(--primary);
+      }
+    }
+
+    h2 {
+      color: var(--text-color-accent);
+      margin-bottom: 5px;
+      margin-left: 10px;
+    }
+    p {
+      color: var(--text-color-accent);
+      margin: 0;
+      margin-left: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .aboutUserInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+
+    h2 {
+      margin: 0;
+    }
+
+    .aboutUserInfoText {
+      display: flex;
+      flex-direction: column;
+
+      .aboutUserInfoTextRating {
+        display: flex;
+        flex-direction: row;
+        svg {
+          width: 20px;
+          aspect-ratio: 1/1;
+          fill: var(--primary-contrast);
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-self: flex-start;
+  }
+  .fill {
+    width: 20px;
+    margin-right: 10px;
+    aspect-ratio: 1/1;
+    background: var(--primary);
+    border-radius: var(--border-radius);
+  }
+
+  .aboutUserInfoDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    border-bottom: 2px solid var(--bg-accent);
+    margin-bottom: 1rem;
+    width: 100%;
+
+    .aboutUserInfoDetailsItem {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+
+      h2, p {
+        margin: 0;
+      }
+      p {
+        font-size: 1.0rem;
+      }
+    }
+  }
+
+
+  // Reviews
+  .aboutRating {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--bg-accent);
+
+    h1, h2, p {
+      margin: 0;
+    }
+
+    .aboutRatingItem {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      svg {
+        width: 20px;
+        aspect-ratio: 1/1;
+        fill: var(--primary-contrast);
+        margin-left: auto;
+      }
+    }
+
+    .aboutReview {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.2rem;
+      margin-bottom: 1rem;
+
+      .aboutRatingStar {
+        width: 20px;
+        aspect-ratio: 1/1;
+        fill: var(--primary-contrast);
+        margin-right: 10px;
+      }
+    }
+  }
+}

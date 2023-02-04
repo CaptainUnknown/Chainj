@@ -49,6 +49,31 @@ const Notifications: React.FC = () => {
               </div>
 
               <button className='notificationSubmit'> Submit request </button>
+
+              { /* Popup */ }
+              <div className='notificationsPopupOverlay' style={{ visibility: 'visible' }}></div>
+              <div className='notificationsPopup' style={{ visibility: 'visible' }}>
+                  <h2> Filter </h2>
+                  <div className='notificationsFilterOptions'>
+                      <div className='notificationsFilterOptionItem'>
+                          <h2> All </h2>
+                          <input type='checkbox' id='notificationsFilterOptionItem1' />
+                      </div>
+                      <div className='notificationsFilterOptionItem'>
+                          <h2> Offered </h2>
+                          <input type='checkbox' id='notificationsFilterOptionItem1' />
+                      </div>
+                      <div className='notificationsFilterOptionItem'>
+                          <h2> Accounting </h2>
+                          <input type='checkbox' id='notificationsFilterOptionItem1' />
+                      </div>
+                      <div className='notificationsFilterOptionItem'>
+                          <h2> Fund Raising </h2>
+                          <input type='checkbox' id='notificationsFilterOptionItem1' />
+                      </div>
+                  </div>
+              </div>
+
           </div>
       </IonContent>
     </IonPage>

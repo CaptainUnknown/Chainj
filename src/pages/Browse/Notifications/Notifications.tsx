@@ -2,32 +2,42 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import './Notifications.scss';
 
 import { ReactComponent as NotFound } from "../../../assets/notfound.svg";
+import { ReactComponent as UserAvatar } from "../../../assets/user.svg";
 
 const Notifications: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
           <div className='notificationsWrap'>
-              <h1> Manage Assignments </h1>
-              {/* If request exists */}
+              <h1> Notifications </h1>
+              <div className='notificationsTime'> Yesterday </div>
               <div className='notificationItem'>
+                  <UserAvatar />
+                  <h2> You have one new assignment from xyz </h2>
                   <img src='https://picsum.photos/200/200?random=1'/>
-                  <div className='notificationItemLeft'>
-                      <h2> Username </h2>
-                      <h1> Basic Accounting </h1>
-                      <div className='notificationTag'> Completed </div>
-                  </div>
-                  <div className='notificationItemRight'>
-                      <p> 1 hour ago </p>
-                      <p> Price $5 </p>
-                  </div>
               </div>
 
-              {/* If request doesn't exist */}
+              <div className='notificationsTime'> Last Week </div>
+              <div className='notificationItem'>
+                  <UserAvatar />
+                  <h2> You have one new assignment from xyz </h2>
+                  <img src='https://picsum.photos/200/200?random=2'/>
+              </div>
+              <div className='notificationItem'>
+                  <UserAvatar />
+                  <h2> You have one new assignment from xyz </h2>
+                  <img src='https://picsum.photos/200/200?random=3'/>
+              </div>
+              <div className='notificationItem'>
+                  <UserAvatar />
+                  <h2> You have one new assignment from xyz </h2>
+                  <img src='https://picsum.photos/200/200?random=4'/>
+              </div>
+
+              {/* If notifications doesn't exist */}
               {/*
               <NotFound/>
-              <h1> No Request Found </h1>
-              <a> Post a request </a>
+              <h1> You've No Notifications </h1>
               */}
           </div>
       </IonContent>

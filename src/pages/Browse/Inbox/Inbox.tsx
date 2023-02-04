@@ -2,6 +2,8 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import './Inbox.scss';
 
 import { ReactComponent as Back } from "../../../assets/arrowleft.svg";
+import { ReactComponent as Copy } from "../../../assets/copy.svg";
+import { ReactComponent as Menu } from "../../../assets/menu.svg";
 
 const Inbox: React.FC = () => {
   return (
@@ -14,6 +16,8 @@ const Inbox: React.FC = () => {
                       <h2> Buyer Name </h2>
                       <p> Last seen 30 minutes ago </p>
                   </div>
+                  <Copy className='inboxCopy'/>
+                  <Menu className='inboxMenu'/>
               </div>
               <div className='searchResults'>
                   <div className='searchResult'>

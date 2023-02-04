@@ -1,9 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { Redirect, Route } from 'react-router-dom';
 import {
-    IonApp,
     IonIcon,
-    IonLabel,
     IonRouterOutlet,
     IonTabBar,
     IonTabButton,
@@ -65,7 +63,6 @@ const Browse: React.FC = () => {
                           { /* <IonLabel> Home </IonLabel>} */ }
                       </IonTabButton>
                   </IonTabBar>
-
               </IonTabs>
           </IonReactRouter>
     </IonPage>

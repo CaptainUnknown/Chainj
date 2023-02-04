@@ -98,85 +98,61 @@
     }
   }
 
-  .notificationsSearch {
-    margin-left: auto;
-  }
-
   .notificationsTip {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     align-self: center;
     border: 2px solid var(--primary);
     border-radius: var(--border-radius);
     margin-top: 2rem;
-    margin-bottom: 1rem;
     width: 90%;
 
-    h1, h2, p {
-      margin: 0;
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 0;
     }
-
-    .notificationsUserInfo {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-content: center;
-      margin: 1rem;
-      .notificationsUserDetails {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        justify-content: flex-start;
-      }
-    }
-
-    .notificationsRequestTitle {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+    h2, p, button {
       align-self: center;
-      background: var(--bg-accent);
-      border-radius: var(--border-radius);
-      height: 40px;
-      width: 90%;
     }
-    .border {
-      color: #2a2a2a;
-      font-size: 0.8rem;
+    p {
+      margin-left: 20px;
+    }
+  }
+
+  textarea {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    background: var(--bg);
+    border: 2px solid var(--bg-accent);
+    border-radius: var(--border-radius);
+    height: 200px;
+    width: 90%;
+
+    &:focus {
       border: 2px solid var(--primary);
-      margin: 10px 0;
+      outline: none;
     }
+  }
 
-    .notificationsRequestDetail {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      align-self: center;
-      width: 90%;
-      margin-top: 15px;
-      border-bottom: 2px solid var(--bg-accent);
+  .notificationsField {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    border-bottom: 2px solid var(--bg-accent);
+    padding: 0.6rem;
+    width: 90%;
 
-      .fill {
-        background: var(--primary);
-        height: 20px;
-        width: 20px;
-        margin-right: 10px;
-        border-radius: var(--border-radius);
-      }
-
-      .notificationsRequestDetailText {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 5px;
-        h2 {
-          font-size: 1.2rem;
-          font-weight: 400;
-          margin: 0;
-          margin-right: 30px;
-        }
-      }
+    h2 {
+      font-size: 1.2rem;
+      color: var(--bg-accent);
     }
+  }
+  .notificationSubmit {
+    margin-top: 1rem;
   }
 }

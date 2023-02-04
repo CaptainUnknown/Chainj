@@ -3,6 +3,7 @@ import './Notifications.scss';
 
 import { ReactComponent as Close } from "../../../assets/close.svg";
 import { ReactComponent as UserAvatar } from "../../../assets/user.svg";
+import { ReactComponent as Search } from "../../../assets/search.svg";
 
 const Notifications: React.FC = () => {
   return (
@@ -11,48 +12,41 @@ const Notifications: React.FC = () => {
           <div className='notificationsWrap'>
               <div className='notificationsHeader'>
                   <Close />
-                  <h2> Post a Request </h2>
+                  <h2> Clients Requests </h2>
+                  <Search className='notificationsSearch'/>
               </div>
               <div className='notificationsTip'>
-                  <h2> How to request a service? </h2>
-                  <p> Lorem ipsum is simply a dummy text of the printing typesetting industry. </p>
-                  <button> Got it </button>
+                  <div className='notificationsUserInfo'>
+                      <UserAvatar />
+                      <div className='notificationsUserDetails'>
+                          <h3> John Doe </h3>
+                          <p> June 2, 2020 </p>
+                      </div>
+                  </div>
+                  <div className='notificationsRequestTitle'> Need someone to edit my photo </div>
+                  <div className='notificationsRequestTitle border'>Photoshop Editing / 23 Offers Sent </div>
+                  <div className='notificationsRequestDetail'>
+                      <div className='fill'></div>
+                      <div className='notificationsRequestDetailText'>
+                          <h2> Duration </h2>
+                          <h2> 2 Days </h2>
+                      </div>
+                  </div>
+                  <div className='notificationsRequestDetail'>
+                      <div className='fill'></div>
+                      <div className='notificationsRequestDetailText'>
+                          <h2> Budget </h2>
+                          <h2> $1 </h2>
+                      </div>
+                  </div>
+                  <div className='notificationsRequestDetail'>
+                      <div className='fill'></div>
+                      <div className='notificationsRequestDetailText'>
+                          <h2> Criteria </h2>
+                          <h2> Retouching </h2>
+                      </div>
+                  </div>
               </div>
-
-              <div className='notificationsField'>
-                  <h2> Add a description </h2>
-              </div>
-              <textarea placeholder='Max 300 Characters'></textarea>
-
-              <div className='notificationsField'>
-                  <h2> Choose a category </h2>
-              </div>
-              <select name="interest" id="interest">
-                  <option value="volvo">Category</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-              </select>
-
-              <div className='notificationsField'>
-                  <h2> When you want your work to be delivered? </h2>
-              </div>
-              <select name="interest" id="interest">
-                  <option value="volvo">Delivery</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-              </select>
-
-              <div className='notificationsField'>
-                  <h2> What's your budget? (Optional) </h2>
-              </div>
-              <select name="interest" id="interest">
-                  <option value="volvo">Budget</option>
-                  <option value="saab">Saab</option>
-                  <option value="mercedes">Mercedes</option>
-                  <option value="audi">Audi</option>
-              </select>
 
               <button className='notificationSubmit'> Submit request </button>
           </div>

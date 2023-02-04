@@ -108,8 +108,8 @@
         .searchResult {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             margin-top: 1.4rem;
             border-bottom: 2px solid var(--primary);
             width: 100%;

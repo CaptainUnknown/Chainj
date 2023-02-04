@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Notifications.scss';
 
-import { ReactComponent as NotFound } from "../../../assets/notfound.svg";
+import { ReactComponent as Close } from "../../../assets/close.svg";
 import { ReactComponent as UserAvatar } from "../../../assets/user.svg";
 
 const Notifications: React.FC = () => {
@@ -9,36 +9,52 @@ const Notifications: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
           <div className='notificationsWrap'>
-              <h1> Notifications </h1>
-              <div className='notificationsTime'> Yesterday </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=1'/>
+              <div className='notificationsHeader'>
+                  <Close />
+                  <h2> Post a Request </h2>
+              </div>
+              <div className='notificationsTip'>
+                  <h2> How to request a service? </h2>
+                  <p> Lorem ipsum is simply a dummy text of the printing typesetting industry. </p>
+                  <button> Got it </button>
               </div>
 
-              <div className='notificationsTime'> Last Week </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=2'/>
+              <div className='notificationsField'>
+                  <h2> Add a description </h2>
               </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=3'/>
-              </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=4'/>
-              </div>
+              <textarea placeholder='Max 300 Characters'></textarea>
 
-              {/* If notifications doesn't exist */}
-              {/*
-              <NotFound/>
-              <h1> You've No Notifications </h1>
-              */}
+              <div className='notificationsField'>
+                  <h2> Choose a category </h2>
+              </div>
+              <select name="interest" id="interest">
+                  <option value="volvo">Category</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+              </select>
+
+              <div className='notificationsField'>
+                  <h2> When you want your work to be delivered? </h2>
+              </div>
+              <select name="interest" id="interest">
+                  <option value="volvo">Delivery</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+              </select>
+
+              <div className='notificationsField'>
+                  <h2> What's your budget? (Optional) </h2>
+              </div>
+              <select name="interest" id="interest">
+                  <option value="volvo">Budget</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+              </select>
+
+              <button className='notificationSubmit'> Submit request </button>
           </div>
       </IonContent>
     </IonPage>

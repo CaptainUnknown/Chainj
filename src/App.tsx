@@ -15,6 +15,7 @@ import ProfileAbout from './pages/ProfileAbout/ProfileAbout';
 import Settings from './pages/Settings/Settings';
 import SettingsPayment from './pages/Settings/Payment/Payment';
 import Support from './pages/Support/Support';
+import Feedback from './pages/Feedback/Feedback';
 import Browse from './pages/Browse/Browse';
 
 /* Core CSS required for Ionic components to work properly */
@@ -78,6 +79,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/support">
           <Support />
+        </Route>
+        <Route exact path="/feedback">
+          <Feedback />
         </Route>
         <Route exact path="/browse">
           <Browse />

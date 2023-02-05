@@ -217,33 +217,4 @@
             }
         }
     }
-
-
-    .saved {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border-radius: var(--border-radius);
-        margin: 1.5rem 0;
-        width: 80%;
-        border: 2px solid var(--primary);
-
-        .savedInfo {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-top: 25px;
-            margin-left: 10px;
-
-            svg {
-                fill: var(--primary);
-                aspect-ratio: 1/1;
-                transition: all 200ms ease-in-out;
-
-                &:active {
-                    fill: var(--primary-contrast);
-                }
-            }
-        }
-    }
 }

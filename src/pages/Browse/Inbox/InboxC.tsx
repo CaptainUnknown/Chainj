@@ -4,6 +4,7 @@ import './Inbox.scss';
 import { ReactComponent as Back } from "../../../assets/arrowleft.svg";
 import { ReactComponent as Copy } from "../../../assets/copy.svg";
 import { ReactComponent as Menu } from "../../../assets/menu.svg";
+import { ReactComponent as Star } from "../../../assets/star.svg";
 
 const Inbox: React.FC = () => {
   return (
@@ -12,12 +13,7 @@ const Inbox: React.FC = () => {
           <div className='inboxWrap'>
               <div className='inboxHeader'>
                   <Back />
-                  <div className='inboxHeaderLeft'>
-                      <h2> Buyer Name </h2>
-                      <p> Last seen 30 minutes ago </p>
-                  </div>
-                  <Copy className='inboxCopy'/>
-                  <Menu className='inboxMenu'/>
+                  <h2> Inbox </h2>
               </div>
               <div className='searchResults'>
                   <div className='searchResult'>
@@ -26,6 +22,7 @@ const Inbox: React.FC = () => {
                           <h3> Username </h3>
                           <h2> This a dummy text. </h2>
                       </div>
+                      <Star style={{ fill: 'var(--primary)'}}/>
                   </div>
                   <div className='searchResult'>
                       <img src='https://picsum.photos/200/200?random=2' alt='searchResult' />
@@ -33,6 +30,7 @@ const Inbox: React.FC = () => {
                           <h3> Username </h3>
                           <h2> This a dummy text. </h2>
                       </div>
+                      <Star style={{ fill: 'var(--primary)'}}/>
                   </div>
                   <div className='searchResult'>
                       <img src='https://picsum.photos/200/200?random=3' alt='searchResult' />
@@ -40,6 +38,7 @@ const Inbox: React.FC = () => {
                           <h3> Username </h3>
                           <h2> This a dummy text. </h2>
                       </div>
+                      <Star style={{ fill: 'var(--primary-contrast)'}}/>
                   </div>
                   <div className='searchResult'>
                       <img src='https://picsum.photos/200/200?random=4' alt='searchResult' />
@@ -47,6 +46,7 @@ const Inbox: React.FC = () => {
                           <h3> Username </h3>
                           <h2> This a dummy text. </h2>
                       </div>
+                      <Star style={{ fill: 'var(--primary)'}}/>
                   </div>
                   <div className='searchResult'>
                       <img src='https://picsum.photos/200/200?random=5' alt='searchResult' />
@@ -54,6 +54,7 @@ const Inbox: React.FC = () => {
                           <h3> Username </h3>
                           <h2> This a dummy text. </h2>
                       </div>
+                      <Star style={{ fill: 'var(--primary)'}}/>
                   </div>
                   <div className='searchResult'>
                       <img src='https://picsum.photos/200/200?random=6' alt='searchResult' />
@@ -61,6 +62,7 @@ const Inbox: React.FC = () => {
                           <h3> Username </h3>
                           <h2> This a dummy text. </h2>
                       </div>
+                      <Star style={{ fill: 'var(--primary)'}}/>
                   </div>
                   <div className='searchResult'>
                       <img src='https://picsum.photos/200/200?random=7' alt='searchResult' />
@@ -68,6 +70,7 @@ const Inbox: React.FC = () => {
                           <h3> Username </h3>
                           <h2> This a dummy text. </h2>
                       </div>
+                      <Star style={{ fill: 'var(--primary)'}}/>
                   </div>
               </div>
           </div>

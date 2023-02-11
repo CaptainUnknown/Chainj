@@ -16,9 +16,10 @@
 
         svg {
             fill: var(--text-color-accent);
-            width: 20px;
+            width: 15px;
             aspect-ratio: 1/1;
             transition: 200ms all ease-in-out;
+            margin-right: 10px;
 
             &:active {
                 fill: var(--primary);
@@ -151,6 +152,12 @@
             justify-content: flex-start;
             margin-top: 40px;
             width: 100%;
+
+            svg {
+                width: 30px;
+                aspect-ratio: 1/1;
+                margin-left: auto;
+            }
 
             img {
                 width: 70px;

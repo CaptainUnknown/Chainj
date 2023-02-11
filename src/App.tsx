@@ -16,6 +16,8 @@ import Settings from './pages/Settings/Settings';
 import SettingsPayment from './pages/Settings/Payment/Payment';
 import Support from './pages/Support/Support';
 import Feedback from './pages/Feedback/Feedback';
+import Privacy from './pages/Privacy/Privacy';
+import Terms from './pages/Terms/Terms';
 import Browse from './pages/Browse/Browse';
 
 /* Core CSS required for Ionic components to work properly */
@@ -43,7 +45,6 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-
         <Route exact path="/home">
           <Home />
         </Route>
@@ -83,10 +84,15 @@ const App: React.FC = () => (
         <Route exact path="/feedback">
           <Feedback />
         </Route>
+        <Route exact path="/privacy-policy">
+          <Privacy />
+        </Route>
+        <Route exact path="/terms-of-services">
+          <Terms />
+        </Route>
         <Route exact path="/browse">
           <Browse />
         </Route>
-
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>

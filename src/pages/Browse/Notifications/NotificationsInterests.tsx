@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './Search.scss';
+import './Notifications.scss';
 import {Tabs, TabsProps} from "antd";
 
 import { ReactComponent as Back } from "../../../assets/arrowleft.svg";

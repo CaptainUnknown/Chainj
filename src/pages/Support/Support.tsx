@@ -27,12 +27,10 @@ const Support: React.FC = () => {
               { /* Popup */ }
               <div className='notificationsPopupOverlay' style={{ visibility: 'visible' }}></div>
               <div className='notificationsPopup' style={{ visibility: 'visible' }}>
-                  <div style={{ width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-accent)', borderRadius: 'var(--border-radius)'}}>
-                      <h2 style={{ margin: '0' }}> Help us Improve </h2>
-                  </div>
+                  <h2 style={{ margin: '0.15rem 0' }}> Help us Improve </h2>
                   <img src='https://picsum.photos/1920/1080?random=1' />
-                  <h2> What do you think about the Chainj app? </h2>
-                  <div className='notificationsPopupOptions'>
+                  <h2 style={{ margin: '1.6rem 0', textAlign: 'center' }}> What do you think about the Chainj app? </h2>
+                  <div className='notificationsPopupOptions' style={{ marginTop: '0rem' }}>
                       <h2> Happy </h2>
                   </div>
                   <div className='notificationsPopupOptions'>

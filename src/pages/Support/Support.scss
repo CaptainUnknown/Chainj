@@ -125,7 +125,8 @@
     justify-content: flex-start;
     align-items: center;
     padding: 1.2rem;
-    height: 600px;
+    padding-bottom: 1.6rem;
+    height: fit-content;
     width: 80%;
     border-radius: var(--border-radius);
     border: 2px solid var(--primary);
@@ -144,6 +145,8 @@
     }
 
     h2, p {
+      font-size: 1.2rem;
+      font-weight: 400;
       margin: 0;
     }
     p {

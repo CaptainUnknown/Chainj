@@ -8,7 +8,7 @@ const Notifications: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
           <div className='notificationsWrap'>
-              <h1> Manage Assignments </h1>
+              <h1> Manage Missions </h1>
               {/* If request exists */}
               <div className='notificationItem'>
                   <img src='https://picsum.photos/200/200?random=1'/>
@@ -19,7 +19,7 @@ const Notifications: React.FC = () => {
                   </div>
                   <div className='notificationItemRight'>
                       <p> 1 hour ago </p>
-                      <p> Price <span>₵</span>5 </p>
+                      <p> Price ¢5 </p>
                   </div>
               </div>
 

@@ -44,23 +44,23 @@ const Browse: React.FC = () => {
                   <IonTabBar slot="bottom">
                       <IonTabButton tab="tab1" href="/browse/home">
                           <IonIcon icon={homeOutline} />
-                          { /* <IonLabel> Home </IonLabel>} */ }
+                          { /* <IonLabel> SelectCategory </IonLabel>} */ }
                       </IonTabButton>
                       <IonTabButton tab="tab2" href="/browse/inbox">
                           <IonIcon icon={chatbubbleOutline} />
-                          { /* <IonLabel> Home </IonLabel>} */ }
+                          { /* <IonLabel> SelectCategory </IonLabel>} */ }
                       </IonTabButton>
                       <IonTabButton tab="tab3" href="/browse/search">
                           <IonIcon icon={searchOutline} />
-                          { /* <IonLabel> Home </IonLabel>} */ }
+                          { /* <IonLabel> SelectCategory </IonLabel>} */ }
                       </IonTabButton>
                       <IonTabButton tab="tab4" href="/browse/notifications">
                           <IonIcon icon={notificationsOutline} />
-                          { /* <IonLabel> Home </IonLabel>} */ }
+                          { /* <IonLabel> SelectCategory </IonLabel>} */ }
                       </IonTabButton>
                       <IonTabButton tab="tab5" href="/browse/profile">
                           <IonIcon icon={personOutline} />
-                          { /* <IonLabel> Home </IonLabel>} */ }
+                          { /* <IonLabel> SelectCategory </IonLabel>} */ }
                       </IonTabButton>
                   </IonTabBar>
               </IonTabs>

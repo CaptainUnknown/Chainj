@@ -13,6 +13,7 @@
         //border-bottom: 2px solid var(--primary);
         background-color: var(--ion-card-background);
         padding: 10px;
+        margin-bottom: 20px;
 
         svg {
             fill: var(--text-color-accent);
@@ -21,7 +22,7 @@
             transition: 200ms all ease-in-out;
 
             &:active {
-                fill: var(--primary);
+                fill: var(--primary-contrast);
             }
         }
         .inboxCopy {
@@ -141,7 +142,7 @@
         align-items: center;
         justify-content: center;
         align-self: flex-start;
-        margin-left: 2rem;
+        margin-left: 1rem;
         width: 85%;
 
         .searchResult {
@@ -149,7 +150,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
-            margin-top: 40px;
+            margin-bottom: 30px;
             width: 100%;
 
             img {
@@ -163,6 +164,11 @@
             .searchResultInfo {
                 h2 {
                     font-size: 1.0rem;
+                    font-weight: 300;
+                }
+                p {
+                    font-size: 0.8rem;
+                    font-weight: 400;
                 }
             }
         }

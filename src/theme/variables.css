@@ -83,6 +83,7 @@ http://ionicframework.com/docs/theming/ */
   /*--font: 'Montserrat', sans-serif;*/
   --font: 'Inter', sans-serif;
   --font-weight: 300;
+  --header-height: 65px;
   --border-radius: 5px;
   --bg: #f4f5f8;
   --bg-accent: #b9b9b9;

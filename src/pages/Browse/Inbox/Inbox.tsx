@@ -13,7 +13,7 @@ const Inbox: React.FC = () => {
               <div className='inboxHeader'>
                   <Back />
                   <div className='inboxHeaderLeft'>
-                      <h2> Buyer Name </h2>
+                      <h2> Friends Name </h2>
                       <p> Last seen 30 minutes ago </p>
                   </div>
                   <Copy className='inboxCopy'/>

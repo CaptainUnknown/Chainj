@@ -11,7 +11,7 @@ const SelectCategory: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-          <div className='homeWrap'>
+          <div className='selectCategoryWrap'>
               <div className='inboxHeader'>
                   <Close style={{ width: '20px', marginRight: '20px' }}/>
                   <h2> Select a Category: </h2>

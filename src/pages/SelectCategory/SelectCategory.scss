@@ -1,4 +1,5 @@
 .selectCategoryWrap {
+  --bg-local: #1f2c36;
   background: var(--bg);
   color: var(--text-color);
   display: flex;
@@ -8,6 +9,7 @@
   font-family: var(--font);
   margin: 0;
   overflow: hidden;
+  background-color: var(--bg-local);
 
   h1, h2, h3, p {
     margin: 0;
@@ -66,11 +68,12 @@
   }
 
   .homeTop {
-    --bg-local: #1f2c36;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    padding-bottom: 1rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 180px;
+    gap: 0.8rem;
+    padding: 2rem 2rem 1rem;
     width: 100%;
     min-height: 100vh;
     background: var(--bg-local);
@@ -93,43 +96,33 @@
     }
     button {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       border-radius: var(--border-radius);
       background: var(--primary);
       color: var(--primary-contrast);
-      padding: 0.5rem;
-      margin-top: 1rem;
+      padding: 0.4rem;
+      height: 100%;
+      width: 100%;
       transition: all 200ms ease-in-out;
+
+      h2 {
+        font-size: 1.0rem;
+        align-self: center;
+      }
+      svg {
+        width: 50px;
+        aspect-ratio: 1/1;
+
+        &:active {
+          fill: var(--primary-contrast);
+        }
+      }
 
       &:active {
         filter: brightness(1.2);
         color: var(--primary);
-      }
-    }
-
-    .option {
-      background: rgba(0, 0, 0, 0.25);
-      min-height: 40px;
-      border-radius: var(--border-radius);
-      padding: 0.5rem;
-      margin-left: 2rem;
-      width: 90%;
-      margin-top: 10px;
-      transition: 200ms all ease-in-out;
-      margin-top: 10px;
-      margin-bottom: 0;
-      padding-left: 1rem;
-
-      a {
-        color: var(--text-color-accent);
-        font-size: 1rem;
-        transition: 200ms all ease-in-out;
-      }
-
-      &:active {
-        background: rgba(0, 0, 0, 0.45);
       }
     }
 
@@ -143,95 +136,55 @@
         fill: var(--primary-contrast);
       }
     }
-    div {
+
+    .overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 90;
+      backdrop-filter: brightness(0.6) blur(10px);
+    }
+
+    .float {
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 100;
+
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 10px;
-
-      .chart {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 5px;
-
-        .chartFill {
-          width: 5rem;
-          aspect-ratio: 1/1;
-          color: var(--text-color-accent);
-          align-items: center;
-          justify-content: center;
-          background: var(--bg-local);
-          border: 5px solid var(--primary-contrast);
-          border-radius: 100%;
-        }
-      }
-    }
-  }
-
-  .homeBottom {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    padding-bottom: 1rem;
-    width: 100%;
-    color: var(--text-color);
-
-    h2, p {
-      margin: 0;
-    }
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-    a {
-      color: var(--primary);
-      font-size: 0.8rem;
-      font-weight: 500;
-
-      &:active {
-        color: var(--primary-contrast);
-      }
-    }
-
-    div {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 10px;
-    }
-
-    .earning {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid var(--primary);
+      width: 90%;
       padding: 1rem;
       border-radius: var(--border-radius);
+      border: 2px solid var(--primary);
+      background-color: var(--bg-local);
+      margin-top: 2rem;
 
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .notification {
-        flex-direction: row;
-        text-align: justify;
+      .option {
+        background: rgba(0, 0, 0, 0.25);
+        min-height: 40px;
+        border-radius: var(--border-radius);
+        padding: 0.5rem;
+        width: 90%;
+        transition: 200ms all ease-in-out;
+        margin-top: 10px;
         margin-bottom: 0;
+        padding-left: 1rem;
 
-        .fill {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 40px;
-          height: 40px;
-          color: var(--primary-contrast);
-          background: var(--primary);
-          border-radius: 100%;
-          margin: 0;
-          margin-left: auto;
+        a {
+          color: var(--text-color-accent);
+          font-size: 1rem;
+          transition: 200ms all ease-in-out;
+        }
+
+        &:active {
+          background: rgba(0, 0, 0, 0.45);
         }
       }
     }

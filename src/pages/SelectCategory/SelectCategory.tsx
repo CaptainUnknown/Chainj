@@ -3,7 +3,17 @@ import './SelectCategory.scss';
 import { useState } from 'react';
 
 import { ReactComponent as Close } from "../../assets/close.svg";
-import { ReactComponent as Info } from "../../assets/info.svg";
+
+import { ReactComponent as One } from "../../assets/categories/1micro.svg";
+import { ReactComponent as Two } from "../../assets/categories/2online.svg";
+import { ReactComponent as Three } from "../../assets/categories/3voluntourism.svg";
+import { ReactComponent as Four } from "../../assets/categories/4internship.svg";
+import { ReactComponent as Five } from "../../assets/categories/5project.svg";
+import { ReactComponent as Six } from "../../assets/categories/6social.svg";
+import { ReactComponent as Seven } from "../../assets/categories/7nonformal.svg";
+import { ReactComponent as Eight } from "../../assets/categories/8informal.svg";
+import { ReactComponent as Nine } from "../../assets/categories/9governance.svg";
+import { ReactComponent as Ten } from "../../assets/categories/10formal.svg";
 
 const SelectCategory: React.FC = () => {
     const [menu, setMenu] = useState(0);
@@ -17,8 +27,12 @@ const SelectCategory: React.FC = () => {
                   <h2> Select a Category: </h2>
               </div>
               <div className='homeTop'>
-                  <button onClick={() => {setMenu(1)} } style={{ marginTop: '0' }}><h2> MICRO VOLUNTEERING </h2></button>
-                  <div style={{ display: ((menu == 1) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(1)} } style={{ marginTop: '0' }}>
+                      <One />
+                      <h2> MICRO VOLUNTEERING </h2>
+                  </button>
+                  <div style={{ display: ((menu == 1) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 1) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Consumer Activism </a>
                       </div>
@@ -61,8 +75,12 @@ const SelectCategory: React.FC = () => {
                   </div>
 
 
-                  <button onClick={() => {setMenu(2)} }><h2> ONLINE VOLUNTEERING </h2></button>
-                  <div style={{ display: ((menu == 2) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(2)} }>
+                      <Two />
+                      <h2> ONLINE VOLUNTEERING </h2>
+                  </button>
+                  <div style={{ display: ((menu == 2) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 2) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Curator </a>
                       </div>
@@ -162,8 +180,12 @@ const SelectCategory: React.FC = () => {
                   </div>
 
 
-                  <button onClick={() => {setMenu(3)} }><h2> VOLUNTOURISM </h2></button>
-                  <div style={{ display: ((menu == 3) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(3)} }>
+                      <Three />
+                      <h2> VOLUNTOURISM </h2>
+                  </button>
+                  <div style={{ display: ((menu == 3) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 3) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Disaster Philanthropy Plan </a>
                       </div>
@@ -183,8 +205,12 @@ const SelectCategory: React.FC = () => {
 
 
 
-                  <button onClick={() => {setMenu(4)} }><h2> INTERNSHIP </h2></button>
-                  <div style={{ display: ((menu == 4) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(4)} }>
+                      <Four />
+                      <h2> INTERNSHIP </h2>
+                  </button>
+                  <div style={{ display: ((menu == 4) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 4) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Customer Journey </a>
                       </div>
@@ -205,8 +231,12 @@ const SelectCategory: React.FC = () => {
                       </div>
                   </div>
 
-                  <button onClick={() => {setMenu(5)} }><h2> INTERNSHIP </h2></button>
-                  <div style={{ display: ((menu == 5) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(5)} }>
+                      <Five />
+                      <h2> PROJECT BASED </h2>
+                  </button>
+                  <div style={{ display: ((menu == 5) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 5) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> B-Corp </a>
                       </div>
@@ -327,8 +357,12 @@ const SelectCategory: React.FC = () => {
                   </div>
 
 
-                  <button onClick={() => {setMenu(6)} }><h2> SOCIAL ACTION </h2></button>
-                  <div style={{ display: ((menu == 6) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(6)} }>
+                      <Six />
+                      <h2> SOCIAL ACTION </h2>
+                  </button>
+                  <div style={{ display: ((menu == 6) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 6) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Activism </a>
                       </div>
@@ -349,7 +383,7 @@ const SelectCategory: React.FC = () => {
                       </div>
                       <div className='option'>
                           <a> Customised Programs </a>
-                      </div>Differentiator
+                      </div>
                       <div className='option'>
                           <a> Differentiator </a>
                       </div>
@@ -437,8 +471,12 @@ const SelectCategory: React.FC = () => {
                   </div>
 
 
-                  <button onClick={() => {setMenu(7)} }><h2> INFORMAL </h2></button>
-                  <div style={{ display: ((menu == 7) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(7)} }>
+                      <Seven />
+                      <h2> INFORMAL </h2>
+                  </button>
+                  <div style={{ display: ((menu == 7) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 7) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Leading Experiences </a>
                       </div>
@@ -460,8 +498,12 @@ const SelectCategory: React.FC = () => {
                   </div>
 
 
-                  <button onClick={() => {setMenu(8)} }><h2> NON-FORMAL </h2></button>
-                  <div style={{ display: ((menu == 8) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(8)} }>
+                      <Eight />
+                      <h2> NON-FORMAL </h2>
+                  </button>
+                  <div style={{ display: ((menu == 8) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 8) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Community Investment </a>
                       </div>
@@ -480,8 +522,12 @@ const SelectCategory: React.FC = () => {
                   </div>
 
 
-                  <button onClick={() => {setMenu(9)} }><h2> GOVERNANCE </h2></button>
-                  <div style={{ display: ((menu == 9) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(9)} }>
+                      <Nine />
+                      <h2> GOVERNANCE </h2>
+                  </button>
+                  <div style={{ display: ((menu == 9) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 9) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Advocacy </a>
                       </div>
@@ -640,8 +686,12 @@ const SelectCategory: React.FC = () => {
                       </div>
                   </div>
 
-                  <button onClick={() => {setMenu(10)} }><h2> FORMAL </h2></button>
-                  <div style={{ display: ((menu == 10) ? "flex" : "none"), flexDirection: 'column' }}>
+                  <button onClick={() => {setMenu(10)} }>
+                      <Ten />
+                      <h2> FORMAL </h2>
+                  </button>
+                  <div style={{ display: ((menu == 10) ? "flex" : "none") }} onClick={() => {setMenu(0)} } className='overlay'></div>
+                  <div style={{ display: ((menu == 10) ? "flex" : "none"), flexDirection: 'column' }} className='float'>
                       <div className='option'>
                           <a> Activation </a>
                       </div>

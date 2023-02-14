@@ -12,7 +12,7 @@ const Settings: React.FC = () => {
                         <h2> Payments </h2>
                     </div>
                     <div className='settingsItem' style={{ marginTop: '25px' }}>
-                        <h2> Exchange $ Chanj </h2>
+                        <h2> Exchange ¢ Chanj </h2>
                     </div>
                     <div className='settingsItem'>
                         <h2> Personal Balance </h2>

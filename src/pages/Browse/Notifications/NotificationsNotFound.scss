@@ -18,6 +18,10 @@
     aspect-ratio: 1/1;
   }
 
+  a {
+    color: var(--primary);
+  }
+
   .notificationItem {
     display: flex;
     flex-direction: row;

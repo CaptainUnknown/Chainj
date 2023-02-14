@@ -14,6 +14,9 @@
     width: 20px;
     margin-bottom: 1rem;
   }
+  a {
+    color: var(--primary);
+  }
 
   h1 {
     color: var(--text-color);
@@ -34,12 +37,16 @@
     justify-content: flex-start;
     color: var(--text-color-accent);
     font-family: var(--font);
-    font-size: 1.5rem;
     border-radius: var(--border-radius);
     cursor: pointer;
+    font-family: var(--font);
+    font-size: 1.2rem;
+    font-weight: 300;
 
     h1, h2, h3, p {
       font-family: var(--font);
+      font-size: 1.4rem;
+      font-weight: 400;
     }
 
     svg {

@@ -37,7 +37,7 @@ const Interest: React.FC = () => {
                       Voluntarism
                   </div>
                   <div className='interestItem' style={{ backgroundImage: "url(" + "https://picsum.photos/400/400?random=6" + ")" }}>
-                      Online Volunteering
+                      Online<br/>Volunteering
                   </div>
               </div>
               <button> Save </button>

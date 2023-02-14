@@ -20,7 +20,7 @@ const Splash: React.FC = () => {
                       Find a Service
                   </div>
                   <div className='splashBlock' style={{ backgroundImage: "url(" + "https://picsum.photos/400/400?random=2" + ")", marginLeft: '1rem' }}>
-                      Become a Volunteer
+                      Become <br/> Volunteer
                   </div>
               </div>
 

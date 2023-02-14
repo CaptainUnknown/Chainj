@@ -37,6 +37,9 @@
         font-weight: 300;
         color: var(--text-color);
     }
+    a {
+        color: var(--primary);
+    }
 
     svg {
         fill: var(--text-color-accent);

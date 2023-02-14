@@ -9,7 +9,7 @@ const Search: React.FC = () => {
               <div className='searchSelectCategory'>
                   <h2> Activities </h2>
                   <select name="interest" id="interest">
-                      <option value="volvo">Volvo</option>
+                      <option value="volvo"> Select </option>
                       <option value="saab">Saab</option>
                       <option value="mercedes">Mercedes</option>
                       <option value="audi">Audi</option>

@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 import './Support.scss';
 
 import { ReactComponent as Close } from "../../assets/arrowleft.svg";

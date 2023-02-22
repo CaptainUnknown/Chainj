@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 import './Terms.scss';
 
 import { ReactComponent as Back } from "../../assets/arrowleft.svg";

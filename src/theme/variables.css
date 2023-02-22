@@ -89,6 +89,29 @@ http://ionicframework.com/docs/theming/ */
   --bg-accent: #b9b9b9;
 }
 
+/* AntD overrides */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary) !important;
+}
+.ant-tabs-tab-active {
+  transition: all 300ms ease;
+}
+.ant-tabs-tab {
+  font-family: var(--font);
+  font-size: 1.2rem;
+}
+.ant-tabs-tab-btn {
+  cursor: pointer;
+}
+.ant-tabs-tab-btn:hover {
+  color: var(--primary) !important;
+}
+.ant-tabs-ink-bar {
+  position: absolute;
+  background: var(--primary) !important;
+  pointer-events: none;
+}
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors

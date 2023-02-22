@@ -8,7 +8,7 @@ import {useState} from "react";
 
 const Search: React.FC = () => {
     const [activeItems, setActiveItems] = useState([
-        <div className='notificationItem'>
+        <div className='notificationItem' style={{ width: '100%' }}>
             <img src='https://picsum.photos/200/200?random=1'/>
             <div className='notificationItemLeft'>
                 <h2> Username </h2>
@@ -22,7 +22,7 @@ const Search: React.FC = () => {
         </div>
     ]);
     const [newItems, setNewItems] = useState([
-        <div className='notificationItem'>
+        <div className='notificationItem' style={{ width: '100%' }}>
             <img src='https://picsum.photos/200/200?random=1'/>
             <div className='notificationItemLeft'>
                 <h2> Username </h2>
@@ -36,7 +36,7 @@ const Search: React.FC = () => {
         </div>
     ]);
     const [completedItems, setCompletedItems] = useState([
-        <div className='notificationItem'>
+        <div className='notificationItem' style={{ width: '100%' }}>
             <img src='https://picsum.photos/200/200?random=1'/>
             <div className='notificationItemLeft'>
                 <h2> Username </h2>
@@ -50,7 +50,7 @@ const Search: React.FC = () => {
         </div>
     ]);
     const [cancelledItems, setCancelledItems] = useState([
-        <div className='notificationItem'>
+        <div className='notificationItem' style={{ width: '100%' }}>
             <img src='https://picsum.photos/200/200?random=1'/>
             <div className='notificationItemLeft'>
                 <h2> Username </h2>

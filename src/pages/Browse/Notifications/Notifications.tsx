@@ -3,36 +3,23 @@ import './Notifications.scss';
 
 import { ReactComponent as NotFound } from "../../../assets/notfound.svg";
 import { ReactComponent as UserAvatar } from "../../../assets/user.svg";
+import {useState} from "react";
 
 const Notifications: React.FC = () => {
+    const [notifications, setNotifications] = useState([
+        <div className='notificationItem'>
+            <UserAvatar />
+            <h2> You have one new assignment from xyz </h2>
+            <img src='https://picsum.photos/200/200?random=1'/>
+        </div>
+    ]);
   return (
     <IonPage>
       <IonContent fullscreen>
           <div className='notificationsWrap'>
               <h1> Notifications </h1>
               <div className='notificationsTime'> Yesterday </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=1'/>
-              </div>
-
-              <div className='notificationsTime'> Last Week </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=2'/>
-              </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=3'/>
-              </div>
-              <div className='notificationItem'>
-                  <UserAvatar />
-                  <h2> You have one new assignment from xyz </h2>
-                  <img src='https://picsum.photos/200/200?random=4'/>
-              </div>
+                {notifications}
 
               {/* If notifications doesn't exist */}
               {/*

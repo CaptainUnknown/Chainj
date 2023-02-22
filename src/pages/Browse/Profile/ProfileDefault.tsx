@@ -2,8 +2,10 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import './Profile.scss';
 
 import { ReactComponent as UserAvatar } from "../../../assets/user.svg";
+import {useState} from "react";
 
 const Home: React.FC = () => {
+    const [balance, setBalance] = useState(40);
   return (
     <IonPage>
 
@@ -12,7 +14,7 @@ const Home: React.FC = () => {
               <div className='profileHeader'>
                   <UserAvatar />
                   <h2> User Name </h2>
-                  <h2 className='profileBalance'> Personal Balance: ¢40 </h2>
+                  <h2 className='profileBalance'> Personal Balance: ¢{balance.toFixed(2)} </h2>
               </div>
               <div className='profileVolunteerMode'>
                   <div className='profileVolunteerModeBox'>

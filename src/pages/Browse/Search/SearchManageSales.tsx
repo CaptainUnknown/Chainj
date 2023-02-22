@@ -4,80 +4,93 @@ import './Search.scss';
 import { ReactComponent as Back } from "../../../assets/arrowleft.svg";
 import { ReactComponent as Info } from "../../../assets/info.svg";
 import {Tabs, TabsProps} from "antd";
+import {useState} from "react";
 
 const Search: React.FC = () => {
+    const [activeItems, setActiveItems] = useState([
+        <div className='notificationItem'>
+            <img src='https://picsum.photos/200/200?random=1'/>
+            <div className='notificationItemLeft'>
+                <h2> Username </h2>
+                <h1> Basic Accounting </h1>
+                <div className='notificationTag'> In Progress </div>
+            </div>
+            <div className='notificationItemRight'>
+                <p> 1 hour ago </p>
+                <p> Price <span>₵</span>5 </p>
+            </div>
+        </div>
+    ]);
+    const [newItems, setNewItems] = useState([
+        <div className='notificationItem'>
+            <img src='https://picsum.photos/200/200?random=1'/>
+            <div className='notificationItemLeft'>
+                <h2> Username </h2>
+                <h1> Basic Accounting </h1>
+                <div className='notificationTag'> In Progress </div>
+            </div>
+            <div className='notificationItemRight'>
+                <p> 1 hour ago </p>
+                <p> Price <span>₵</span>5 </p>
+            </div>
+        </div>
+    ]);
+    const [completedItems, setCompletedItems] = useState([
+        <div className='notificationItem'>
+            <img src='https://picsum.photos/200/200?random=1'/>
+            <div className='notificationItemLeft'>
+                <h2> Username </h2>
+                <h1> Basic Accounting </h1>
+                <div className='notificationTag' style={{ background: 'var(--primary-contrast)', color: 'var(--text-color-contrast)' }}> Completed </div>
+            </div>
+            <div className='notificationItemRight'>
+                <p> 1 hour ago </p>
+                <p> Price <span>₵</span>5 </p>
+            </div>
+        </div>
+    ]);
+    const [cancelledItems, setCancelledItems] = useState([
+        <div className='notificationItem'>
+            <img src='https://picsum.photos/200/200?random=1'/>
+            <div className='notificationItemLeft'>
+                <h2> Username </h2>
+                <h1> Basic Accounting </h1>
+                <div className='notificationTag'> Cancelled </div>
+            </div>
+            <div className='notificationItemRight'>
+                <p> 1 hour ago </p>
+                <p> Price <span>₵</span>5 </p>
+            </div>
+        </div>
+    ]);
+
     const items: TabsProps['items'] = [
         {
             key: '1',
-            label: `Active`,
+            label: `Active (${activeItems.length})`,
             children: <>
-                <h2> No Currently active assignments yet </h2>
+                { activeItems.length > 0 ? activeItems : <h2> No active assignments yet </h2> }
             </>,
         },
         {
             key: '2',
-            label: `New`,
+            label: `New (${newItems.length})`,
             children: <>
-                <div className='notificationItem'>
-                    <img src='https://picsum.photos/200/200?random=1'/>
-                    <div className='notificationItemLeft'>
-                        <h2> Username </h2>
-                        <h1> Basic Accounting </h1>
-                        <div className='notificationTag'> In Progress </div>
-                    </div>
-                    <div className='notificationItemRight'>
-                        <p> 1 hour ago </p>
-                        <p> Price <span>₵</span>5 </p>
-                    </div>
-                </div>
+                { newItems.length > 0 ? newItems : <h2> No new assignments yet </h2> }
                 </>,
         },
         {
             key: '3',
-            label: `Completed`,
+            label: `Completed (${completedItems.length})`,
             children: <>
-                <div className='notificationItem'>
-                    <img src='https://picsum.photos/200/200?random=1'/>
-                    <div className='notificationItemLeft'>
-                        <h2> Username </h2>
-                        <h1> Basic Accounting </h1>
-                        <div className='notificationTag' style={{ background: 'var(--primary-contrast)', color: 'var(--text-color-contrast)' }}> Completed </div>
-                    </div>
-                    <div className='notificationItemRight'>
-                        <p> 1 hour ago </p>
-                        <p> Price <span>₵</span>5 </p>
-                    </div>
-                </div>
-                <div className='notificationItem'>
-                    <img src='https://picsum.photos/200/200?random=1'/>
-                    <div className='notificationItemLeft'>
-                        <h2> Username </h2>
-                        <h1> Basic Accounting </h1>
-                        <div className='notificationTag' style={{ background: 'var(--primary-contrast)', color: 'var(--text-color-contrast)' }}> Completed </div>
-                    </div>
-                    <div className='notificationItemRight'>
-                        <p> 1 hour ago </p>
-                        <p> Price <span>₵</span>5 </p>
-                    </div>
-                </div>
+                { completedItems.length > 0 ? completedItems : <h2> No completed assignments yet </h2> }
             </>
         },
         {
             key: '4',
-            label: `Cancelled`,
+            label: `Cancelled (${cancelledItems.length})`,
             children: <>
-                <div className='notificationItem'>
-                    <img src='https://picsum.photos/200/200?random=1'/>
-                    <div className='notificationItemLeft'>
-                        <h2> Username </h2>
-                        <h1> Basic Accounting </h1>
-                        <div className='notificationTag'> Cancelled </div>
-                    </div>
-                    <div className='notificationItemRight'>
-                        <p> 1 hour ago </p>
-                        <p> Price <span>₵</span>5 </p>
-                    </div>
-                </div>
+                { cancelledItems.length > 0 ? cancelledItems : <h2> No cancelled assignments yet </h2> }
             </>
         },
     ];

@@ -1,7 +1,16 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Search.scss';
+import {useState} from "react";
 
 const Search: React.FC = () => {
+    const [historyItems, setHistoryItems] = useState([
+        <div className='searchResult'>
+            <img src='https://picsum.photos/200/200?random=1' alt='searchResult' />
+            <div className='searchResultInfo'>
+                <h3> Username </h3>
+            </div>
+        </div>
+    ]);
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -17,33 +26,13 @@ const Search: React.FC = () => {
               </div>
               <div className='searchTitle'>
                   <h3> Recently Viewed Users </h3>
-                  <a> Clear History </a>
+                  <a onClick={() => {
+                      setHistoryItems([]);
+                      // TODO: Backend Implementation
+                  }}> Clear History </a>
               </div>
               <div className='searchResults'>
-                  <div className='searchResult'>
-                      <img src='https://picsum.photos/200/200?random=1' alt='searchResult' />
-                      <div className='searchResultInfo'>
-                          <h3> Username </h3>
-                      </div>
-                  </div>
-                  <div className='searchResult'>
-                      <img src='https://picsum.photos/200/200?random=2' alt='searchResult' />
-                      <div className='searchResultInfo'>
-                          <h3> Username </h3>
-                      </div>
-                  </div>
-                  <div className='searchResult'>
-                      <img src='https://picsum.photos/200/200?random=3' alt='searchResult' />
-                      <div className='searchResultInfo'>
-                          <h3> Username </h3>
-                      </div>
-                  </div>
-                  <div className='searchResult'>
-                      <img src='https://picsum.photos/200/200?random=4' alt='searchResult' />
-                      <div className='searchResultInfo'>
-                          <h3> Username </h3>
-                      </div>
-                  </div>
+                  { historyItems }
               </div>
           </div>
       </IonContent>

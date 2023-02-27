@@ -1,0 +1,32 @@
+.thankYouWrap {
+  background: #202e38;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: 100vh;
+  font-family: var(--font);
+  overflow: hidden;
+
+  h1 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--primary-contrast);
+    margin-bottom: 0;
+    width: 85%;
+  }
+
+  svg {
+    fill: var(--primary-contrast);
+    width: 70px;
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}

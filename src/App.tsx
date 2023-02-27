@@ -19,6 +19,8 @@ import Feedback from './pages/Feedback/Feedback';
 import Privacy from './pages/Privacy/Privacy';
 import Terms from './pages/Terms/Terms';
 import SelectCategory from './pages/SelectCategory/SelectCategory';
+import ThankYou from './pages/ThankYou/ThankYou';
+import OnRamp from './pages/OnRamp/OnRamp';
 import Browse from './pages/Browse/Browse';
 
 /* Core CSS required for Ionic components to work properly */
@@ -94,8 +96,14 @@ const App: React.FC = () => (
         <Route exact path="/select-category">
           <SelectCategory />
         </Route>
+        <Route exact path="/thank-you">
+          <ThankYou />
+        </Route>
         <Route exact path="/browse">
           <Browse />
+        </Route>
+        <Route exact path="/on-ramp">
+          <OnRamp />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />

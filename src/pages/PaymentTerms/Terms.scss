@@ -114,4 +114,23 @@
         font-weight: 800;
         margin-top: 1rem;
     }
+    h3 {
+        margin-top: 0.5rem;
+        color: var(--primary);
+    }
+    .bulletsTop {
+        margin-top: 0.6rem;
+    }
+    .bullets {
+        position: relative;
+        padding-left: 20px; /* Adjust the spacing as needed */
+
+        &::before {
+            content: '\2022'; /* Unicode character for bullet point */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
 }

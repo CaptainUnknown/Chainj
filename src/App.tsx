@@ -18,6 +18,7 @@ import Support from './pages/Support/Support';
 import Feedback from './pages/Feedback/Feedback';
 import Privacy from './pages/Privacy/Privacy';
 import Terms from './pages/Terms/Terms';
+import PaymentTerms from './pages/PaymentTerms/Terms';
 import SelectCategory from './pages/SelectCategory/SelectCategory';
 import ThankYou from './pages/ThankYou/ThankYou';
 import OnRamp from './pages/OnRamp/OnRamp';
@@ -92,6 +93,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/terms-of-services">
           <Terms />
+        </Route>
+        <Route exact path="/payment-terms">
+          <PaymentTerms />
         </Route>
         <Route exact path="/select-category">
           <SelectCategory />

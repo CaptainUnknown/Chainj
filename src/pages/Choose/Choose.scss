@@ -27,19 +27,22 @@
     color: var(--text-color);
     align-self: center;
     margin-left: 0;
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 500;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   button {
-    color: var(--bg);
-    background: var(--primary);
+    color: var(--text-color);
+    background: var(--gradient);
     font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 600;
     height: 60px;
     border-radius: var(--border-radius);
     margin-top: 2rem;
-    width: 80%;
+    width: 40%;
 
     &:active {
       filter: brightness(1.2);
@@ -59,7 +62,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: var(--text-color-accent);
+      color: var(--primary);
       font-family: var(--font);
       font-size: 1.5rem;
       font-weight: 800;

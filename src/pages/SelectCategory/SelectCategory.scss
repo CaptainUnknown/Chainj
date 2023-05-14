@@ -9,7 +9,7 @@
   font-family: var(--font);
   margin: 0;
   overflow: hidden;
-  background-color: var(--bg-local);
+  background-color: var(--bg);
 
   h1, h2, h3, p {
     margin: 0;
@@ -28,11 +28,11 @@
     min-height: var(--header-height);
     align-items: center;
     //border-bottom: 2px solid var(--primary);
-    background-color: var(--ion-card-background);
+    background-color: var(--bg-accent);
     padding: 10px;
 
     svg {
-      fill: var(--text-color-accent);
+      fill: var(--text-color);
       width: 20px;
       aspect-ratio: 1/1;
       margin-right: 20px;
@@ -51,13 +51,11 @@
       margin-right: 20px;
     }
     h2 {
-      color: var(--text-color-accent);
+      color: var(--text-color);
     }
     p {
-      color: var(--text-color-accent);
-      margin: 0;
-      margin-left: 10px;
-      margin-bottom: 0;
+      color: var(--text-color);
+      margin: 0 0 0 10px;
     }
 
     .inboxHeaderLeft {
@@ -76,7 +74,7 @@
     padding: 2rem 2rem 1rem;
     width: 100%;
     min-height: 100vh;
-    background: var(--bg-local);
+    background: var(--bg);
     color: var(--text-color-accent);
 
     h2, p {
@@ -84,8 +82,8 @@
     }
     h2 {
       align-self: flex-start;
-      font-size: 1.2rem;
-      font-weight: 300;
+      font-size: 0.8rem;
+      font-weight: 500;
       margin-top: 1rem;
       color: var(--primary-contrast);
       transition: 200ms all ease-in-out;
@@ -100,8 +98,8 @@
       align-items: center;
       justify-content: center;
       border-radius: var(--border-radius);
-      background: var(--primary);
-      color: var(--primary-contrast);
+      background: var(--bg-accent);
+      color: var(--primary);
       padding: 0.4rem;
       height: 100%;
       width: 100%;
@@ -127,7 +125,7 @@
     }
 
     svg {
-      fill: var(--text-color-accent);
+      fill: var(--primary);
       width: 20px;
       aspect-ratio: 1/1;
       transition: all 200ms ease-in-out;
@@ -138,12 +136,10 @@
     }
 
     .overlay {
-      height: 100%;
+      height: 150%;
       width: 100%;
+      top: -100px;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       z-index: 90;
       backdrop-filter: brightness(0.6) blur(10px);
     }
@@ -163,19 +159,18 @@
       padding: 1rem;
       border-radius: var(--border-radius);
       border: 2px solid var(--primary);
-      background-color: var(--bg-local);
+      background-color: var(--bg);
       margin-top: 2rem;
 
       .option {
         background: rgba(0, 0, 0, 0.25);
         min-height: 40px;
         border-radius: var(--border-radius);
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
         width: 90%;
         transition: 200ms all ease-in-out;
         margin-top: 10px;
         margin-bottom: 0;
-        padding-left: 1rem;
 
         a {
           color: var(--text-color-accent);

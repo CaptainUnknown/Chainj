@@ -1,4 +1,4 @@
-.promoteWrap {
+.gigPromoteWrap {
   background: var(--bg);
   color: var(--text-color);
   display: flex;
@@ -48,13 +48,32 @@
     }
   }
 
+  .title {
+    align-self: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .tag {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-color-accent);
+    text-align: center;
+  }
+
   .promoteSelect {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
+    align-self: center;
+    justify-content: space-between;
+    width: 80%;
     margin-top: 40px;
 
+    h2 {
+      font-size: 1.2rem;
+    }
     a {
       margin-left: auto;
     }
@@ -65,14 +84,16 @@
     flex-direction: row;
     border: 2px solid var(--primary);
     width: 100%;
-    padding: 0.6rem;
     margin-bottom: 30px;
     border-radius: var(--border-radius);
+    justify-content: space-between;
+    padding: 0.6rem 20% 0.6rem 0.6rem;
+    align-items: center;
 
     .promoteGigInfo {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
 
       svg {
         fill: var(--primary-contrast);
@@ -86,6 +107,10 @@
       .promoteGigInfoTop {
         display: flex;
         flex-direction: row;
+
+        h2, svg {
+          margin-bottom: 5px;
+        }
       }
     }
 
@@ -111,10 +136,10 @@
       margin-bottom: 20px;
 
       .promoteBox {
-        width: 20px;
+        width: 24px;
         aspect-ratio: 1/1;
         border-radius: var(--border-radius);
-        background: var(--primary);
+        background: var(--gradient);
       }
 
       h2 {

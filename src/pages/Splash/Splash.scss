@@ -13,7 +13,7 @@
   }
 
   svg {
-    fill: var(--text-color-accent);
+    fill: var(--text-color);
     width: 40px;
     aspect-ratio: 1/1;
   }
@@ -28,6 +28,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
     margin: 0;
   }
 
@@ -38,19 +39,22 @@
     align-items: center;
     margin-top: 8rem;
 
+
     .splashBlock {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: var(--text-color-accent);
+      color: var(--text-color);
       font-family: var(--font);
       font-size: 1.5rem;
       font-weight: 800;
       border-radius: var(--border-radius);
+      text-align: center;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      filter: opacity(0.8);
       height: 200px;
       aspect-ratio: 1/1;
     }

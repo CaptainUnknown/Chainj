@@ -1,4 +1,4 @@
-.loginWrap {
+.welcomeLoginWrap {
   background: var(--bg);
   color: var(--text-color);
   display: flex;
@@ -21,24 +21,25 @@
 
   h1 {
     color: var(--text-color);
-    align-self: flex-start;
-    margin-left: 4rem;
-    font-size: 1.4rem;
-    font-weight: 300;
+    align-self: center;
+    margin: 20px 0 0;
+    font-size: 1.6rem;
+    font-weight: 800;
   }
 
   h2 {
-    color: var(--text-color);
-    align-self: flex-start;
-    margin-left: 4rem;
-    font-size: 1.1rem;
-    font-weight: 300;
+    color: var(--text-color-accent);
+    align-self: center;
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 
   button {
-    color: var(--bg);
-    background: var(--primary);
+    color: var(--text-color);
+    background: var(--gradient);
     font-family: var(--font);
+    font-weight: 600;
     height: 60px;
     border-radius: var(--border-radius);
 
@@ -78,7 +79,7 @@
 
       font-family: var(--font);
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 600;
     }
     input:focus{
       outline: none;
@@ -91,8 +92,7 @@
   }
 
   .loginForgot {
-    align-self: flex-end;
-    margin-right: 4rem;
+    align-self: center;
   }
 
   a {

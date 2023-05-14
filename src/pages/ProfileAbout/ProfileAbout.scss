@@ -128,9 +128,10 @@
   }
 
   h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 600;
     align-self: flex-start;
+    margin-bottom: 15px;
   }
   .fill {
     width: 20px;
@@ -146,7 +147,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     align-self: flex-start;
-    border-bottom: 2px solid var(--bg-accent);
+    border-bottom: 1px solid var(--bg-accent);
     margin-bottom: 1rem;
     width: 100%;
 
@@ -160,8 +161,25 @@
       h2, p {
         margin: 0;
       }
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
       p {
-        font-size: 1.0rem;
+        color: var(--text-color-accent);
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+
+      .description {
+        color: var(--text-color-accent);
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .test {
+        color: var(--primary);
+        font-size: 1rem;
+        font-weight: 300;
       }
     }
   }
@@ -185,7 +203,7 @@
       margin-bottom: 15px;
 
       h1 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
 
       svg {
@@ -208,6 +226,23 @@
         fill: var(--primary-contrast);
         margin-right: 10px;
       }
+
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--text-color-accent);
+      }
     }
   }
+}
+
+//overrides
+
+.ant-tabs-tab-btn, .ant-tabs-tabpane, .ant-tabs-tabpane-active {
+  color: var(--text-color);
 }

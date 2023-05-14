@@ -1,4 +1,4 @@
-.promoteWrap {
+.feedbackWrap {
   background: var(--bg);
   color: var(--text-color);
   display: flex;
@@ -32,9 +32,16 @@
 
   h2 {
     color: var(--text-color);
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.3rem;
+    font-weight: 500;
     margin-bottom: 10px;
+  }
+
+  .sub {
+    color: var(--text-color-accent);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 2rem;
   }
 
   button {
@@ -98,9 +105,7 @@
     }
     p {
       color: var(--text-color-accent);
-      margin: 0;
-      margin-left: 10px;
-      margin-bottom: 0;
+      margin: 0 0 0 10px;
     }
 
     .inboxHeaderLeft {
@@ -125,8 +130,7 @@
     transition: all 200ms ease-in-out;
     svg {
       fill: var(--primary);
-      margin: 0;
-      margin-right: 20px;
+      margin: 0 20px 0 0;
     }
     h2 {
       margin: 0;
@@ -170,6 +174,8 @@
       h2 {
         margin-left: 20px;
         margin-bottom: 0;
+        font-size: 1.1rem;
+        font-weight: 400;
       }
     }
   }

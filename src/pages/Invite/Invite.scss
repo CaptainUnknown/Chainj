@@ -15,7 +15,7 @@
   }
 
   svg {
-    fill: var(--text-color-accent);
+    fill: var(--text-color);
     width: 100px;
     aspect-ratio: 1/1;
   }
@@ -29,18 +29,19 @@
     padding-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
-    background: var(--primary);
+    background: var(--gradient);
 
     h2 {
       font-family: var(--font);
       font-size: 1.2rem;
-      font-weight: 300;
-      color: var(--text-color-accent);
+      font-weight: 600;
+      color: var(--text-color);
       margin: 0;
       margin-left: 0.4rem;
-      margin-top: 0.5rem;
+      margin-top: 0.3rem;
     }
     .profileBalance {
+      margin-top: -2px;
       margin-bottom: 2rem;
     }
   }
@@ -49,7 +50,7 @@
     height: 5px;
     border-radius: var(--border-radius);
     width: 100px;
-    background-color: var(--primary);
+    background: var(--gradient);
     margin-top: 4rem;
   }
 
@@ -61,13 +62,14 @@
     width: 90%;
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      font-weight: 300;
       font-family: var(--font);
       width: 80%;
     }
 
     svg {
-      width: 40px;
+      width: 30px;
       aspect-ratio: 1/1;
       fill: var(--primary);
       margin-left: auto;
@@ -88,7 +90,7 @@
     width: 80%;
 
     svg {
-      fill: var(--text-color-accent);
+      fill: var(--text-color);
       width: 35px;
       aspect-ratio: 1/1;
       transition: 200ms all ease-in-out;

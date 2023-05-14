@@ -1,5 +1,5 @@
 .thankYouWrap {
-  background: #202e38;
+  background: var(--bg);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
@@ -13,13 +13,13 @@
   h1 {
     font-size: 1.1rem;
     font-weight: 300;
-    color: var(--primary-contrast);
+    color: var(--primary);
     margin-bottom: 0;
     width: 85%;
   }
 
   svg {
-    fill: var(--primary-contrast);
+    fill: var(--primary);
     width: 70px;
     aspect-ratio: 1/1;
     margin-bottom: 1rem;
@@ -27,6 +27,9 @@
 
   span {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 900;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

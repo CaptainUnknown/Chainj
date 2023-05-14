@@ -20,14 +20,20 @@
 
   h1 {
     color: var(--text-color);
-    align-self: flex-start;
-    margin-left: 4rem;
-    font-size: 1.4rem;
-    font-weight: 300;
+    align-self: center;
+    margin: 20px 0 0;
+    font-size: 1.6rem;
+    font-weight: 800;
   }
 
   p {
-    margin: 0 3.5rem;
+    color: var(--text-color-accent);
+    margin: 5px 0 0;
+    align-self: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    width: 80%;
   }
 
   .signupContinueButtonFacebook, .signupContinueButtonGoogle, .signupContinueButtonEmail {
@@ -35,13 +41,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    color: var(--text-color-accent);
+    color: var(--text-color);
     font-family: var(--font);
     border-radius: var(--border-radius);
     cursor: pointer;
-    font-family: var(--font);
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 600;
 
     h1, h2, h3, p {
       font-family: var(--font);

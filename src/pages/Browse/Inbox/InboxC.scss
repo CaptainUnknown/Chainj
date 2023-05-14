@@ -34,15 +34,13 @@
             margin-right: 20px;
         }
         h2 {
-            color: var(--text-color-accent);
+            color: var(--text-color);
             margin-bottom: 5px;
             margin-left: 10px;
         }
         p {
             color: var(--text-color-accent);
-            margin: 0;
-            margin-left: 10px;
-            margin-bottom: 0;
+            margin: 0 0 0 10px;
         }
 
         .inboxHeaderLeft {
@@ -57,11 +55,8 @@
         font-size: 2rem;
         font-weight: 600;
         color: var(--text-color);
-        margin: 0;
         align-self: flex-start;
-        margin-top: 4rem;
-        margin-left: 2rem;
-        margin-bottom: 1.4rem;
+        margin: 4rem 0 1.4rem 2rem;
     }
     h2 {
         font-family: var(--font);
@@ -95,8 +90,7 @@
         height: 50px;
         width: 85%;
         padding: 0.5rem 1rem;
-        margin: 0;
-        margin-bottom: 1rem;
+        margin: 0 0 1rem;
         cursor: pointer;
         transition: all 0.1s ease-in-out;
 
@@ -170,6 +164,8 @@
             .searchResultInfo {
                 h2 {
                     font-size: 1.0rem;
+                    font-weight: 300;
+                    color: var(--text-color-accent);
                 }
             }
         }

@@ -83,7 +83,7 @@ const ProfileAbout: React.FC = () => {
                     <h2> Description </h2>
                     <div className='aboutUserInfoDetails'>
                         <div className='aboutUserInfoDetailsItem'>
-                            <h2> Lorem Ipsum here is the simple dummy text of the printing & typesetting industry </h2>
+                            <h2 className='description'> Lorem Ipsum here is the simple dummy text of the printing & typesetting industry </h2>
                         </div>
                     </div>
 
@@ -93,7 +93,7 @@ const ProfileAbout: React.FC = () => {
                     </div>
                     <div className='aboutUserInfoDetails'>
                         <div style={{ display: 'flex', flexDirection: 'row' }}>
-                            <h2> English </h2>
+                            <h2 className='test'> English </h2>
                             <h2 style={{ marginLeft: '100px' }}> 7.5/10 </h2>
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -109,7 +109,7 @@ const ProfileAbout: React.FC = () => {
         {
             key: '2',
             label: `Activities`,
-            children: `Content of Tab Pane 2`,
+            children: `Activities will appear here`,
         },
         {
             key: '3',

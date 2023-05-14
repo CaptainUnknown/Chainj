@@ -1,19 +1,18 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { BarChart,  Bar,  XAxis,  YAxis,  CartesianGrid,  Tooltip } from "recharts";
 import './Profile.scss';
 
-import { ReactComponent as UserAvatar } from "../../../assets/user.svg";
 import { ReactComponent as Back } from "../../../assets/arrowleft.svg";
 import {useState} from "react";
 
 const Home: React.FC = () => {
     const data = [
-        {name: '1', uv: 40, pv: 2400, amt: 2400},
-        {name: '2', uv: 60, pv: 2400, amt: 2400},
-        {name: '3', uv: 120, pv: 2400, amt: 2400},
-        {name: '4', uv: 90, pv: 2400, amt: 2400},
-        {name: '5', uv: 100, pv: 2400, amt: 2400},
-        {name: '6', uv: 95, pv: 2400, amt: 2400}
+        {name: '1', uv: 400, pv: 2100, amt: 2400},
+        {name: '2', uv: 600, pv: 1400, amt: 2400},
+        {name: '3', uv: 1200, pv: 2000, amt: 2400},
+        {name: '4', uv: 900, pv: 1700, amt: 2400},
+        {name: '5', uv: 1000, pv: 2300, amt: 2400},
+        {name: '6', uv: 950, pv: 1800, amt: 2400}
     ];
     const [balance, setBalance] = useState(50);
     const [revenues, setRevenues] = useState([50, 50, 50, 50, 50 ]);
@@ -36,12 +35,24 @@ const Home: React.FC = () => {
               </div>
 
               <div className='graphWrap'>
-                  <LineChart width={600} height={300} data={data}>
-                      <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                      <CartesianGrid stroke="#ccc" />
+                  <BarChart
+                      width={500}
+                      height={300}
+                      data={data}
+                      margin={{
+                          top: 5,
+                          right: 30,
+                          left: 20,
+                          bottom: 5
+                      }}
+                  >
+                      <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="name" />
                       <YAxis />
-                  </LineChart>
+                      <Tooltip />
+                      <Bar dataKey="pv" fill="#8884d8" />
+                      <Bar dataKey="uv" fill="#82ca9d" />
+                  </BarChart>
               </div>
 
               <div className='stats'>

@@ -25,7 +25,7 @@ const Signup: React.FC = () => {
           <div className='signupWrap'>
               <GoBack />
               <a> Go Back </a>
-              <h1> Join Chainj. </h1>
+              <h1> Join Chainj </h1>
               <p> Lorem Ipsum is simply a dummy text with something about printing & typesetting industry. </p>
 
               <div className='signupContinueButtonFacebook'>

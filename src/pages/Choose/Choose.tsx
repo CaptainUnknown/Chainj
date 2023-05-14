@@ -13,7 +13,7 @@ const Choose: React.FC = () => {
           <div className='chooseWrap'>
               <GoBack />
               <a> Go Back </a>
-              <h1> Choose Service that suits you best. </h1>
+              <h1> Choose Service that suits you the best </h1>
               <div className='chooseGrid'>
                   <div className='chooseOption' style={{ backgroundImage: "url(" + "https://picsum.photos/400/400?random=1" + ")" }}>
                       Formal

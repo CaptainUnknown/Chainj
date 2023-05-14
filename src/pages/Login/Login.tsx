@@ -18,7 +18,7 @@ const Login: React.FC = () => {
 
         { /* Body */ }
       <IonContent fullscreen>
-          <div className='loginWrap'>
+          <div className='welcomeLoginWrap'>
               <GoBack />
               <a> Go Back </a>
               <h1> Welcome Back. </h1>

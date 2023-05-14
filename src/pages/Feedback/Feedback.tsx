@@ -14,13 +14,13 @@ const Feedback: React.FC = () => {
 
         { /* Body */ }
       <IonContent fullscreen>
-          <div className='promoteWrap'>
+          <div className='feedbackWrap'>
               <div className='inboxHeader'>
                   <Back />
                   <h2> Feedback </h2>
               </div>
               <h2 style={{ marginLeft: '2rem', marginTop: '2rem' }}> Help us Improve </h2>
-              <h2 style={{ marginLeft: '2rem', fontSize: '0.9rem' }}> Lorem ipsum Dummy text </h2>
+              <h2 className='sub'> Lorem ipsum Dummy text </h2>
 
               <div className='promoteGig'>
                   <Star />

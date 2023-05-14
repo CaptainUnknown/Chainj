@@ -16,9 +16,9 @@ const Promote: React.FC = () => {
 
         { /* Body */ }
       <IonContent fullscreen>
-          <div className='promoteWrap'>
-              <h2> Your jobs are ready? </h2>
-              <h2> Promote it through your social network </h2>
+          <div className='gigPromoteWrap'>
+              <h2 className='title'> Your jobs are ready? </h2>
+              <h2 className='tag'> Promote it through your social network </h2>
 
               <div className='promoteSelect'>
                   <h2> Selected Assignments </h2>

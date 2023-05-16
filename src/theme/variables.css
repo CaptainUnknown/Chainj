@@ -83,6 +83,7 @@ http://ionicframework.com/docs/theming/ */
   --gradient-accent: linear-gradient(90deg, #f9f871, #f87171);
   --text-color: white;
   --text-color-accent: #acacac;
+  --tab: var(--bg-accent);
   /*--font: 'Montserrat', sans-serif;*/
   --font: 'Inter', sans-serif;
   --font-weight: 600;
@@ -221,7 +222,7 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-item-background: var(--bg);
 
-    --ion-card-background: var(--bg);
+    --ion-card-background: var(--bg-accent);
   }
 
   .ios ion-modal {
@@ -269,8 +270,8 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-toolbar-background: #1f1f1f;
 
-    --ion-tab-bar-background: #304656;
+    --ion-tab-bar-background: var(--tab);
 
-    --ion-card-background: #304656;
+    --ion-card-background: var(--bg-accent);
   }
 }

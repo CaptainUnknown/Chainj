@@ -1,6 +1,6 @@
 # Chainj DApp 📱
 
-⚠️ (WIP) ChainJ is an Ionic app built with React TypeScript. DApp focuses on connecting "FRIENDS" and "VOLUNTEERS" and allows charities to reward volunteers for their services. This repository contains only contains the UI elements for the DAPP Marketplace app.
+⚠️ (WIP) ChainJ is an Ionic app built with React TypeScript. DApp focuses on connecting "FRIENDS" and "VOLUNTEERS" and allows charities to reward volunteers for their services. This repository only contains the UI elements for the DApp.
 
 ## Installation ⚙️
 
@@ -30,8 +30,3 @@ ionic serve
 <img src="https://i.imgur.com/QKNj6y0.png" alt="Delivery Screen" style="width:424px;"/>
 <img src="https://i.imgur.com/DJgA0aU.png" alt="Notification Screen" style="width:424px;"/>
 <img src="https://i.imgur.com/QAfhLD4.png" alt="Splash Screen" style="width:424px;"/>
-
-![On Boarding Screen](https://i.imgur.com/8RjfJhB.png)
-![On Boarding Screen With Socials](https://i.imgur.com/LjU2ZOV.png)
-![Splash Screen](https://i.imgur.com/AViGGbA.png)
-![Profile Page](https://i.imgur.com/diqeoBT.png)
